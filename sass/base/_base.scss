@@ -4,6 +4,19 @@
     border: 0; 
 }
 
+body{
+    overflow: hidden;
+}
+
 header{
-    margin-top: 0px;
+    width: $width-logo;
+    height: $height-logo;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    & img{
+        object-fit: contain;
+        width: $width-logo;
+        height: $height-logo;
+    }
 }
