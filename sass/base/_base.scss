@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,17 +8,15 @@
 
 body{
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
-header{
-    width: $width-logo;
-    height: $height-logo;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    & img{
-        object-fit: contain;
-        width: $width-logo;
-        height: $height-logo;
-    }
+.titre-menu{
+    font-family: 'Shrikhand', cursive;
 }
+
+p{
+    font-size: $size-paragraphe;
+    font-weight: 300;
+}
+

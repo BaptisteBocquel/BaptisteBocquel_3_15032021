@@ -1,7 +1,35 @@
 /* GENERAL */
 
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+$size-paragraphe: 17px;
+
+$box-shadow-size:5px;
+$box-shadow-color: #333;
+
+$border-radius-size: 20px;
 
 /* HEADER */
 
-$width-logo: 150px;
-$height-logo : 50px;
+$width-logo: 180px;
+$height-logo : 80px;                /* Définit la taille du logo */
+
+/* SEARCH */
+
+$bg-search : #eaeaea;
+$search-txt-size : 17px;         /* Définit la couleur de la barre de recherche + taille du texte */
+
+/* BOUTONS */
+
+$height-button: 50px;               /* hauteur des boutons */
+$color-txt-button: white;         /* couleur txt boutons */
+
+/* EXPLORER */
+
+$bg-explorer: #f6f6f6;
+
+/* WORKING */
+
+$bg-working-choice: #f6f6f6; 
