@@ -9,6 +9,7 @@
     & input{
         background-color: $bg-search;
         margin-left: 10px;
+        color: #353535;
     }
     & #search_label{
         font-family : 'roboto', sans-serif;
@@ -32,4 +33,5 @@ button{
     color: $color-txt-button;
     font-size: $size-paragraphe;
 }
+
 

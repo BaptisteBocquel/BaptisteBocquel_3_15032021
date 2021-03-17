@@ -6,25 +6,25 @@ $color-tertiary: #99E2D0;
 
 $size-paragraphe: 17px;
 
-$box-shadow-size:5px;
+$box-shadow-size: 1px;
+$radius-size:10px;
 $box-shadow-color: #333;
 
 $border-radius-size: 20px;
 
 /* HEADER */
 
-$width-logo: 180px;
-$height-logo : 80px;                /* Définit la taille du logo */
-
+$width-logo: 170px;
+$height-logo : 70px;               
 /* SEARCH */
 
 $bg-search : #eaeaea;
-$search-txt-size : 17px;         /* Définit la couleur de la barre de recherche + taille du texte */
+$search-txt-size : 17px;         
 
 /* BOUTONS */
 
-$height-button: 50px;               /* hauteur des boutons */
-$color-txt-button: white;         /* couleur txt boutons */
+$height-button: 50px;               
+$color-txt-button: white;         
 
 /* EXPLORER */
 
@@ -33,3 +33,12 @@ $bg-explorer: #f6f6f6;
 /* WORKING */
 
 $bg-working-choice: #f6f6f6; 
+
+/* ENCADRE NOUVEAU */
+
+$bg-new: #99E2D0;
+$color-new: #139273;
+
+/* FOOTER */
+
+$bg-footer: #353535;

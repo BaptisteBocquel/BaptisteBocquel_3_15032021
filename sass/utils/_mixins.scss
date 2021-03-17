@@ -1,11 +1,11 @@
-@mixin box_shadow-size($color: $box-shadow-color, $box-shadow: $box-shadow-size){
-    box-shadow: $box-shadow $box-shadow $color;
+@mixin box_shadow-size($color: $box-shadow-color, $box-shadow: $box-shadow-size, $radius: $radius-size){
+    box-shadow: $box-shadow $box-shadow $radius $color;
 }
 
 @mixin border-radius-size($border: $border-radius-size){
     border-radius: $border;
 }
 
-@mixin box-restaurant{
-    
+@mixin box-restaurant-main{
+
 }
