@@ -5,6 +5,10 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
 $size-paragraphe: 17px;
+$size-h1 : 30px;
+$weight-h1: 300;
+$size-h3: 18px;
+$weight-h3: 600;
 
 $box-shadow-size: 1px;
 $radius-size:10px;
@@ -15,7 +19,8 @@ $border-radius-size: 20px;
 /* HEADER */
 
 $width-logo: 170px;
-$height-logo : 70px;               
+$height-logo : 70px;   
+
 /* SEARCH */
 
 $bg-search : #eaeaea;
@@ -42,3 +47,7 @@ $color-new: #139273;
 /* FOOTER */
 
 $bg-footer: #353535;
+
+/* IMAGES MENU */
+
+$img-menu-height: 300px;

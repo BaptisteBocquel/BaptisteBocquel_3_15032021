@@ -20,30 +20,18 @@ p{
     font-size: $size-paragraphe;
     font-weight: 300;
 }
- /* ICONES */
-
-.map{
-    color:#353535; /* Définit l'icone de la barre de recherche */
+a{
+    color: $bg-footer;
 }
+ h1{
+     font-size: $size-h1;
+     font-weight: $weight-h1;
+ }
 
-.icone-working{
-    color: #7e7e7e;
-    font-size: 20px;
-}
-
-.hearth{                        /* Definit les coeurs */
-    color: white;
-    font-size : 20px;
-    text-shadow: 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000, -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000;
-}
-
-.icone-footer{
-    color :white; 
-    font-size: 15px;
-    margin-top: 13px;
-}
-
-/* --------------------------- */
+ h3{
+     font-weight: $weight-h3;
+     font-size: $size-h3;
+ }
 
 footer{
     a{

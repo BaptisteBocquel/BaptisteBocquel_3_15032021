@@ -2,16 +2,21 @@
 
 header{
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 80px;
-    margin: 0 auto;
+    height: 60px;
+    padding-left:20px;
+    padding-right: 20px;
+    background-color: white;
+    
     img{
         object-fit: contain;
         width: $width-logo;
         height: $height-logo;
-    } 
+        margin: 0 auto;
+    }
 }
+
+
 
  /* SECTION EXPLORER */
 
@@ -61,6 +66,7 @@ header{
         
         i{
             width: 20px;
+            text-align:center;
         }
         h4{
             width:180px;
@@ -81,6 +87,7 @@ header{
             background-color:	rgba(147, 86, 220,0.2);
             i{
                 color: $color-primary;
+                text-align: center;
             }
         }
     }
@@ -101,11 +108,7 @@ header{
         align-self: flex-start;
     }
     &__choice{
-        width: 100%;
-        height: 280px;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
+        @include box-restaurant-main;
         @include border-radius-size;
         @include box_shadow-size;
         &--img{
@@ -117,8 +120,7 @@ header{
                 object-fit: cover;
                 width: 100%;
                 height: 200px;
-                border-top-right-radius: $border-radius-size;
-                border-top-left-radius: $border-radius-size;
+                @include border-radius-top;
             }
             .new{
                 position: absolute;
@@ -147,12 +149,6 @@ header{
             .right{
                 width: 25px;
                 height: 25px;
-            }
-            .hearth{
-                &:hover{
-                    color: $color-primary;
-                    text-shadow: none;
-                }
             }
         }
     }
@@ -185,3 +181,101 @@ header{
     }
 }
 
+/* PAGE MENU RESTAURANTS */
+
+.carte{
+    position :absolute;
+    background-color: $bg-explorer;
+
+    /* IMAGE MENU */
+
+    .carte__img{
+        width: 100%;
+        height: $img-menu-height;
+        @include img-menu;
+    }
+
+    /* MENU */ 
+
+    .carte__menu{
+        position:relative;
+        top: -40px;
+        background-color : $bg-explorer;
+        padding: 20px;
+        @include border-radius-top(40px);
+        display: flex;
+        flex-direction: column;
+        &--title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 10px;
+            margin-bottom: 30px;
+        }
+        &--choice{
+            margin-top: 20px;
+            &-plat{
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+            }
+            p:first-child{
+                font-weight:500;
+                color: #333;
+            }
+        }
+        button{
+            width: 50%;
+            align-self: center;
+            margin-top:0;
+        }
+    }
+    
+}
+
+.encadre-choix{
+    background-color: white;
+    display: flex;
+    margin-top: 15px;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 15px;
+    overflow: hidden;
+    height: 65px;
+    
+    @include box_shadow-size($box-shadow:0.1px, $radius:8px);
+    @include border-radius-size(15px);
+    &__dispo{
+        width: 100%;
+       display:flex;
+       justify-content: space-between; 
+       align-items: flex-end;
+       padding-bottom:10px;
+       padding-top: 10px;
+       padding-right: 10px;
+    }
+    .left{
+        overflow: hidden;
+        p{
+            width: 268px;
+            white-space: nowrap;
+        }
+    }
+    .right-hide{
+        background-color:$color-tertiary;
+        width: 10%;
+        height: 100%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+        i{
+            font-weight: bold;
+            color: white;
+        }
+        
+    }
+}

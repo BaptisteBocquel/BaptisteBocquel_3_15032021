@@ -23,6 +23,8 @@
     }
 }
 
+/* BOUTONS */
+
 button{
     height: $height-button;
     background-image:linear-gradient(170deg,$color-secondary, $color-primary);
@@ -34,4 +36,35 @@ button{
     font-size: $size-paragraphe;
 }
 
+/* ICONE COEUR */
 
+.hearth{   
+    color:#333;
+    font-size : 25px;
+    &:hover{
+        font-weight: bold;
+        color: $color-primary;
+    }
+}
+.map{
+    color:#353535; /* Définit l'icone de la barre de recherche */
+}
+
+.icone-working{
+    color: #7e7e7e;
+    font-size: 20px;
+}
+
+.icone-footer{
+    color :white; 
+    font-size: 15px;
+    margin-top: 13px;
+}
+
+/* SOULIGNEMENT TITRE */
+
+.souligne{
+    display:inline-block;
+    border-bottom: 3px solid $color-tertiary;
+    padding-bottom:7px;
+}

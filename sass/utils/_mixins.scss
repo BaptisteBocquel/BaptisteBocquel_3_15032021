@@ -6,6 +6,23 @@
     border-radius: $border;
 }
 
-@mixin box-restaurant-main{
-
+@mixin border-radius-top($border-top: $border-radius-size){
+    border-top-right-radius: $border-top;
+    border-top-left-radius: $border-top;
 }
+
+@mixin box-restaurant-main{
+    width: 100%;
+    height: 280px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin img-menu{
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: $img-menu-height;
+        }
+    }
