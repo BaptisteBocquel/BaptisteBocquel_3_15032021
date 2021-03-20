@@ -10,6 +10,14 @@
 /* ENCADRE NOUVEAU */
 /* FOOTER */
 /* IMAGES MENU */
+@keyframes checkbox-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +40,7 @@ p {
 
 a {
   color: #353535;
+  text-decoration: none;
 }
 
 h1 {
@@ -86,6 +95,9 @@ button {
   border-radius: 30px;
   color: white;
   font-size: 17px;
+}
+button a {
+  color: white;
 }
 
 /* ICONE COEUR */
@@ -363,6 +375,25 @@ header img {
   box-shadow: 0.1px 0.1px 8px #333;
   border-radius: 15px;
 }
+.encadre-choix .right-hide {
+  background-color: #99E2D0;
+  width: 0;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.encadre-choix .right-hide i {
+  font-weight: bold;
+  color: white;
+}
+.encadre-choix:hover .right-hide {
+  animation: checkbox-animation 500ms ease-in-out forwards;
+  /* durée animation: 500 ms, ralenti en debut et fin d'animation, reste sur le 100% à la fin */
+}
 .encadre-choix__dispo {
   width: 100%;
   display: flex;
@@ -372,26 +403,11 @@ header img {
   padding-top: 10px;
   padding-right: 10px;
 }
-.encadre-choix .left {
-  overflow: hidden;
-}
-.encadre-choix .left p {
-  width: 268px;
+.encadre-choix .left p, .encadre-choix .left h3 {
+  width: 260px;
   white-space: nowrap;
-}
-.encadre-choix .right-hide {
-  background-color: #99E2D0;
-  width: 10%;
-  height: 100%;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.encadre-choix .right-hide i {
-  font-weight: bold;
-  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*# sourceMappingURL=style.css.map */

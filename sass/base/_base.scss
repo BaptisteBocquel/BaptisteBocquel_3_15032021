@@ -10,6 +10,7 @@ body{
     
     font-family: 'Roboto', sans-serif;
     min-width: 320px;
+    
 }
 
 .titre-menu{
@@ -22,6 +23,7 @@ p{
 }
 a{
     color: $bg-footer;
+    text-decoration: none;
 }
  h1{
      font-size: $size-h1;

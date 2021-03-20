@@ -243,9 +243,27 @@ header{
     padding-left: 15px;
     overflow: hidden;
     height: 65px;
-    
     @include box_shadow-size($box-shadow:0.1px, $radius:8px);
     @include border-radius-size(15px);
+    .right-hide{
+        background-color:$color-tertiary;
+        width: 0;
+        height: 100%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        i{
+            font-weight: bold;
+            color: white;
+        }
+    }
+    &:hover .right-hide{
+        animation: checkbox-animation 500ms ease-in-out forwards ; /* durée animation: 500 ms, ralenti en debut et fin d'animation, reste sur le 100% à la fin */
+    }
+
     &__dispo{
         width: 100%;
        display:flex;
@@ -256,26 +274,12 @@ header{
        padding-right: 10px;
     }
     .left{
-        overflow: hidden;
-        p{
-            width: 268px;
+        p, h3{
+            width: 260px;
             white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
-    .right-hide{
-        background-color:$color-tertiary;
-        width: 10%;
-        height: 100%;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        
-        i{
-            font-weight: bold;
-            color: white;
-        }
-        
-    }
+    
 }
