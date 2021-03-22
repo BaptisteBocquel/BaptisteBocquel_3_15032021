@@ -5,14 +5,20 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
 $size-paragraphe: 17px;
-$size-h1 : 30px;
-$weight-h1: 300;
+$size-h1 : 23px;
+$weight-h1: 600;
 $size-h3: 18px;
 $weight-h3: 600;
 
-$box-shadow-size: 1px;
+/* SEARCH */
+
+$bg-search : #eaeaea;
+$search-txt-size : 17px; 
+
+/* BOX */
+$box-shadow-size: 2px;
 $radius-size:10px;
-$box-shadow-color: #333;
+$box-shadow-color: #7b7e7d;
 
 $border-radius-size: 20px;
 
@@ -21,10 +27,7 @@ $border-radius-size: 20px;
 $width-logo: 170px;
 $height-logo : 70px;   
 
-/* SEARCH */
-
-$bg-search : #eaeaea;
-$search-txt-size : 17px;         
+        
 
 /* BOUTONS */
 

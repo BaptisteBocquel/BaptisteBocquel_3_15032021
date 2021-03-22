@@ -6,9 +6,10 @@ header{
     height: 60px;
     padding-left:20px;
     padding-right: 20px;
+    padding-top: 10px;
     background-color: white;
-    
     img{
+        
         object-fit: contain;
         width: $width-logo;
         height: $height-logo;
@@ -28,9 +29,9 @@ header{
     background-color: $bg-explorer;
     padding-bottom: 50px;
     h1{
-        margin-top: 50px;
-        margin-left: 70px;
-        margin-right:70px;
+        margin-top: 40px;
+        margin-left: 60px;
+        margin-right:60px;
         text-align: center;
     }
     p{
@@ -44,37 +45,77 @@ header{
 /* SECTION WORKING */
 
 .working{
+    background-color: #fff;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
+    @include pc{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-top:45px;
+        padding-bottom:45px
+    }
     h2{
         align-self:flex-start;
-        margin-left: 20px;
         margin-bottom: 10px;
+        @include tablette{
+            align-self: center;
+            margin-left: 0;
+        }
+        @include pc{
+            
+            width: 100%;
+            text-align: center;
+        }
     }
     &__choice{
-        width: 300px;
+        width: 100%;
         background-color: $bg-working-choice;
         margin-top: 20px;
         height: 70px;
+        margin-left:10px;
         @include border-radius-size;
+        @include box_shadow-size;
         display:flex;
-        justify-content: center;
         align-items: center;
-        
+        @include tablette{
+            width: 450px;
+        }
+        @include pc{
+            width: 500px;
+            margin-right: 30px;
+            margin-top: 20px;
+            
+            justify-content: center;
+        }
         i{
             width: 20px;
             text-align:center;
+            margin-left:15px;
+            margin-right:25px;
+            @include tablette{
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+            
         }
         h4{
             width:180px;
-            margin-left: 15px;
+            @include pc{
+                width: 260px;
+                text-align: center;
+            }
         }
         p{
             position:relative;
-            left: -37px;
+            left: -15px;
             width: 30px;
             height: 25px;
             @include border-radius-size(50%);
@@ -82,6 +123,9 @@ header{
             text-align: center;
             color: white;
             padding-top: 6px;   
+            @include pc{
+                left: -94px;
+            }
         }
         &:hover{
             background-color:	rgba(147, 86, 220,0.2);
@@ -94,11 +138,27 @@ header{
 }
 
 /* SECTION RESTAURANT */ 
+.dispo-rest{
+    @include tablette{
+        
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    @include pc{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
 .rest{
     background-color: $bg-explorer;
     padding-top: 30px; 
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
@@ -106,11 +166,29 @@ header{
     align-items: center;
     h2{
         align-self: flex-start;
+        @include tablette{
+            align-self: center;
+        }
+
+        @include pc{
+            align-self : center;
+        }
     }
     &__choice{
         @include box-restaurant-main;
         @include border-radius-size;
         @include box_shadow-size;
+        @include tablette{
+            width: 45%;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        @include pc{
+            width: 30%;
+            margin:0 auto;
+            margin-top: 40px;
+            
+        }
         &--img{
             width: 100%;
             height: 180px;
@@ -125,7 +203,7 @@ header{
             .new{
                 position: absolute;
                 top : 15px;
-                left: 75%;
+                right: 20px;
                 width: 80px;
                 height: 30px;
                 background-color: $bg-new;
@@ -161,6 +239,16 @@ header{
     padding-top: 20px;
     padding-bottom: 40px;
     padding-left: 20px;
+    @include tablette{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    @include pc{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
     p{
         color : #fff;
         margin-top: 10px;
@@ -218,7 +306,8 @@ header{
             width: 100%;
             display:flex;
             flex-direction: column;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
+            margin-top: 20px;
             }
             p:first-child{
                 font-weight:500;
@@ -228,7 +317,7 @@ header{
         button{
             width: 50%;
             align-self: center;
-            margin-top:0;
+            margin-top:20px;
         }
     }
     
@@ -245,9 +334,15 @@ header{
     height: 65px;
     @include box_shadow-size($box-shadow:0.1px, $radius:8px);
     @include border-radius-size(15px);
+    animation: apparition-menu 3500ms 200ms ease-in-out forwards;
+    @include tablette{
+        width:80%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
     .right-hide{
         background-color:$color-tertiary;
-        width: 0;
+        width: 0px;
         height: 100%;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -262,8 +357,13 @@ header{
     }
     &:hover .right-hide{
         animation: checkbox-animation 500ms ease-in-out forwards ; /* durée animation: 500 ms, ralenti en debut et fin d'animation, reste sur le 100% à la fin */
+        @include tablette{
+            animation: checkbox-animation-tablette 500ms ease-in-out forwards ;
+        }
     }
-
+    &:hover i{
+        animation: rotate-i 500ms ease-in-out forwards;
+    }
     &__dispo{
         width: 100%;
        display:flex;
@@ -275,10 +375,13 @@ header{
     }
     .left{
         p, h3{
-            width: 260px;
+            width: 240px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            @include tablette{
+                width: 400px;
+            }
         }
     }
     

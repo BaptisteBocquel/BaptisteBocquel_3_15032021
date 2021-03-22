@@ -13,7 +13,7 @@
 
 @mixin box-restaurant-main{
     width: 100%;
-    height: 280px;
+    height: 270px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -24,5 +24,17 @@
             object-fit: cover;
             width: 100%;
             height: $img-menu-height;
+        }
+    }
+
+    @mixin tablette{
+        @media screen and (min-width: 600px) and (max-width:1023px){
+            @content;
+        }
+    }
+
+    @mixin pc{
+        @media screen and (min-width: 1024px){
+            @content;
         }
     }
