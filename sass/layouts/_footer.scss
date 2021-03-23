@@ -1,0 +1,34 @@
+.footer{
+    background-color: $bg-footer;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    @include tablette{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    @include pc{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    p{
+        color : #fff;
+        margin-top: 10px;
+        &:first-child{
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-family: 'Shrikhand', cursive;
+        }
+    }
+    &__choice{
+        display:flex;
+        a{
+            font-weight: 400;
+        }
+        &--icons{
+            width:35px;
+        }
+    }
+}

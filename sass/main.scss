@@ -3,6 +3,15 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/keyframes";
+@import "./utils/animations";
 @import "./base/base";
-@import "./components/components.scss";
-@import "./layouts/layouts";
+@import "./components/barreRecherche";
+@import "./components/boutons";
+@import "./components/icones";
+@import "./components/souligne";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./pages/explorer";
+@import "./pages/working";
+@import "./pages/choixresto";
+@import "./pages/pagesrestos";

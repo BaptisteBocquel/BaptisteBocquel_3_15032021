@@ -18,6 +18,16 @@
     }
 }
 
+@keyframes checkbox-animation-pc{
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100px;
+    }
+}
+
 @keyframes rotate-i{
     from{
         transform: rotate(0deg);
@@ -50,12 +60,30 @@
 @keyframes apparition-menu{
     0%{
         opacity: 0;
-        transform: scale(1.1);
+        
     }
 
     100%{
         opacity: 1;
-        transform: scale(1);
+
     }
 }
 
+@keyframes remplissage-coeur{
+    0%{
+        color : #333;
+    }
+
+    50%{
+        font-weight:bold;
+        color: $color-primary;
+        transform: scale(1.5);
+    }
+    100%{
+        font-weight: bold;
+        color:transparent;
+        background:linear-gradient(60deg, $color-primary,$color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

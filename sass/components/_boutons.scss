@@ -1,0 +1,35 @@
+button{
+    height: $height-button;
+    background:linear-gradient(170deg,$color-secondary, $color-primary);
+    margin-top: 30px;
+    padding-right: 20px;
+    padding-left:20px;
+    @include border-radius-size(30px);
+    @include box_shadow-size;
+    color: $color-txt-button;
+    font-size: $size-paragraphe;
+    position: relative;
+    z-index: 1;
+    a{
+        color: white;
+    }
+    &:hover{
+        &::after{
+            opacity:1;
+        }
+    }
+    &::after{
+        content: " ";
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        background: linear-gradient(170deg, lighten($color-secondary, 3),lighten($color-primary,3));
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+        @include border-radius-size(30px);
+        box-shadow : $box-shadow-size $box-shadow-size $radius-size darken($box-shadow-color, 5);
+    }
+}

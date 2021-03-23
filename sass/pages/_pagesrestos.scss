@@ -1,0 +1,143 @@
+.carte{
+    position :absolute;
+    background-color: $bg-explorer;
+
+    /* IMAGE MENU */
+
+    .carte__img{
+        width: 100%;
+        height: $img-menu-height;
+        @include img-menu;
+    }
+
+    /* MENU */ 
+
+    .carte__menu{
+        position:relative;
+        top: -40px;
+        background-color : $bg-explorer;
+        padding: 20px;
+        @include border-radius-top(40px);
+        display: flex;
+        flex-direction: column;
+        &--title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 10px;
+            margin-bottom: 30px;
+            @include pc{
+                justify-content: center;
+                h1{
+                    margin-right: 20px;
+                    font-size: 25px;
+                }
+            }
+        }
+        &--choice{
+            margin-top: 20px;
+            &-plat{
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            @include pc{
+                align-items: center;
+            }
+            }
+            p:first-child{
+                font-weight:500;
+                color: #333;
+                @include pc{
+                    text-align: center;
+                }
+            }
+        }
+        button{
+            width: 50%;
+            align-self: center;
+            margin-top:20px;
+            @include pc{
+                width: 250px;
+            }
+        }
+    }
+    
+}
+
+.encadre-choix{
+    background-color: white;
+    display: flex;
+    margin-top: 15px;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 15px;
+    overflow: hidden;
+    height: 65px;
+    opacity: 0;
+    @include box_shadow-size($box-shadow:0.1px, $radius:8px);
+    @include border-radius-size(15px);
+    animation: apparition-menu $anim-dur ease-in-out forwards;
+    @for $i from 1 through $num-menu{
+        &--#{$i}{
+            animation-delay: $anim-delay * $i;
+        }
+    }
+    @include tablette{
+        width:80%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    @include pc{
+        width: 600px;
+    }
+    .right-hide{
+        background-color:$color-tertiary;
+        width: 0px;
+        height: 100%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        i{
+            font-weight: bold;
+            color: white;
+        }
+    }
+    &:hover .right-hide{
+        animation: checkbox-animation 500ms ease-in-out forwards ; /* durée animation: 500 ms, ralenti en debut et fin d'animation, reste sur le 100% à la fin */
+        @include tablette{
+            animation: checkbox-animation-tablette 500ms ease-in-out forwards ;
+        }
+        @include pc{
+            animation: checkbox-animation-pc 500ms ease-in-out forwards ;
+        }
+    }
+    &:hover i{
+        animation: rotate-i 500ms ease-in-out forwards;
+    }
+    &__dispo{
+        width: 100%;
+       display:flex;
+       justify-content: space-between; 
+       align-items: flex-end;
+       padding-bottom:10px;
+       padding-top: 10px;
+       padding-right: 10px;
+    }
+    .left{
+        p, h3{
+            width: 240px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            @include tablette{
+                width: 400px;
+            }
+        }
+    }
+}

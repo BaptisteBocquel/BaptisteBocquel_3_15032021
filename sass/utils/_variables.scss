@@ -54,3 +54,8 @@ $bg-footer: #353535;
 /* IMAGES MENU */
 
 $img-menu-height: 300px;
+
+
+$num-menu: 4;
+$anim-dur : 1800ms;
+$anim-delay: $anim-dur / $num-menu;

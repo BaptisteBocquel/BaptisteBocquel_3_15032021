@@ -1,0 +1,22 @@
+.search{
+    height: 50px;
+    background-color: $bg-search;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    & input{
+        background-color: $bg-search;
+        margin-left: 10px;
+        color: #353535;
+    }
+    & #search_label{
+        font-family : 'roboto', sans-serif;
+        font-size: $search-txt-size;
+        font-size: bold;
+        width: 150px;
+        overflow:hidden;
+    }
+    & i{
+        margin-left: 30px;
+    }
+}

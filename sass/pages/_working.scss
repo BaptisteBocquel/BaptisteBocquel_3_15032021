@@ -1,0 +1,92 @@
+.working{
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    @include pc{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-top:45px;
+        padding-bottom:45px
+    }
+    h2{
+        align-self:flex-start;
+        margin-bottom: 10px;
+        @include tablette{
+            align-self: center;
+            margin-left: 0;
+        }
+        @include pc{
+            
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &__choice{
+        width: 100%;
+        background-color: $bg-working-choice;
+        margin-top: 20px;
+        height: 70px;
+        margin-left:10px;
+        @include border-radius-size;
+        @include box_shadow-size;
+        display:flex;
+        align-items: center;
+        @include tablette{
+            width: 450px;
+        }
+        @include pc{
+            width: 500px;
+            margin-right: 30px;
+            margin-top: 20px;
+            
+            justify-content: center;
+        }
+        i{
+            width: 20px;
+            text-align:center;
+            margin-left:15px;
+            margin-right:25px;
+            @include tablette{
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+            
+        }
+        h4{
+            width:180px;
+            @include pc{
+                width: 260px;
+                text-align: center;
+            }
+        }
+        p{
+            position:relative;
+            left: -15px;
+            width: 30px;
+            height: 25px;
+            @include border-radius-size(50%);
+            background-color: $color-primary;
+            text-align: center;
+            color: white;
+            padding-top: 6px;   
+            @include pc{
+                left: -90px;
+            }
+        }
+        &:hover{
+            background-color:	rgba(147, 86, 220,0.2);
+            i{
+                color: $color-primary;
+                text-align: center;
+            }
+        }
+    }
+}
