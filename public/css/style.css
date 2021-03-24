@@ -11,28 +11,12 @@
 /* ENCADRE NOUVEAU */
 /* FOOTER */
 /* IMAGES MENU */
-@keyframes checkbox-animation {
+@keyframes reduction {
   from {
-    width: 0;
+    margin-right: -30px;
   }
   to {
-    width: 30px;
-  }
-}
-@keyframes checkbox-animation-tablette {
-  from {
-    width: 0;
-  }
-  to {
-    width: 80px;
-  }
-}
-@keyframes checkbox-animation-pc {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100px;
+    margin-right: 0px;
   }
 }
 @keyframes rotate-i {
