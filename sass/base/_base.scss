@@ -4,13 +4,12 @@
     border: 0; 
 }
 html,body{
-    height:100vh;
+    height:100%;
 }
 
 body{
     
     font-family: 'Roboto', sans-serif;
-    min-width: 320px;
     display:flex;
     justify-content: center;
     align-items: center;

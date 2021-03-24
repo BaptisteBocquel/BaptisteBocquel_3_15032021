@@ -16,7 +16,7 @@
     width: 0;
   }
   to {
-    width: 40px;
+    width: 30px;
   }
 }
 @keyframes checkbox-animation-tablette {
@@ -123,12 +123,11 @@
 }
 
 html, body {
-  height: 100vh;
+  height: 100%;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  min-width: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,7 +154,7 @@ h1 {
 
 h3 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 footer a {
@@ -371,11 +370,10 @@ header p {
   }
 }
 .working__choice {
-  width: 100%;
+  width: 90%;
   background-color: #f6f6f6;
   margin-top: 20px;
   height: 70px;
-  margin-left: 10px;
   border-radius: 20px;
   box-shadow: 2px 2px 10px #7b7e7d;
   display: flex;
@@ -623,10 +621,9 @@ header p {
   background-color: white;
   display: flex;
   margin-top: 15px;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-  padding-left: 15px;
-  overflow: hidden;
+  padding-left: 10px;
   height: 65px;
   opacity: 0;
   box-shadow: 0.1px 0.1px 8px #7b7e7d;
@@ -659,10 +656,11 @@ header p {
 }
 .encadre-choix .right-hide {
   background-color: #99E2D0;
-  width: 0px;
+  width: 0;
   height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  margin-left: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -689,25 +687,23 @@ header p {
 .encadre-choix:hover i {
   animation: rotate-i 500ms ease-in-out forwards;
 }
-.encadre-choix__dispo {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-right: 10px;
+.encadre-choix .right {
+  width: 8%;
+  margin-left: 10px;
 }
-.encadre-choix .left p, .encadre-choix .left h3 {
-  width: 240px;
+.encadre-choix .left {
+  width: 82%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media screen and (min-width: 600px) and (max-width: 1023px) {
-  .encadre-choix .left p, .encadre-choix .left h3 {
-    width: 400px;
-  }
+.encadre-choix .left p, .encadre-choix .left h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.encadre-choix .left p {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

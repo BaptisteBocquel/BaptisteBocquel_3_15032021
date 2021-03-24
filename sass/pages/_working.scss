@@ -30,11 +30,10 @@
         }
     }
     &__choice{
-        width: 100%;
+        width: 90%;
         background-color: $bg-working-choice;
         margin-top: 20px;
         height: 70px;
-        margin-left:10px;
         @include border-radius-size;
         @include box_shadow-size;
         display:flex;
