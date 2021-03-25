@@ -38,6 +38,9 @@
         @include box_shadow-size;
         display:flex;
         align-items: center;
+        @include littlesmart{
+            width: 260px;
+        }
         @include tablette{
             width: 450px;
         }
@@ -53,6 +56,10 @@
             text-align:center;
             margin-left:15px;
             margin-right:25px;
+            @include littlesmart{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
             @include tablette{
                 margin-left: 40px;
                 margin-right: 40px;
