@@ -777,22 +777,20 @@ header p {
   font-weight: bold;
   color: white;
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .encadre-choix .right-hide {
+    width: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .encadre-choix .right-hide {
+    width: 50px;
+  }
+}
 .encadre-choix:hover .right-hide {
   -webkit-animation: checkbox-animation 500ms ease-in-out forwards;
   animation: checkbox-animation 500ms ease-in-out forwards;
   /* durée animation: 500 ms, ralenti en debut et fin d'animation, reste sur le 100% à la fin */
-}
-@media screen and (min-width: 600px) and (max-width: 1023px) {
-  .encadre-choix:hover .right-hide {
-    -webkit-animation: checkbox-animation-tablette 500ms ease-in-out forwards;
-    animation: checkbox-animation-tablette 500ms ease-in-out forwards;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .encadre-choix:hover .right-hide {
-    -webkit-animation: checkbox-animation-pc 500ms ease-in-out forwards;
-    animation: checkbox-animation-pc 500ms ease-in-out forwards;
-  }
 }
 .encadre-choix:hover i {
   -webkit-animation: rotate-i 500ms ease-in-out forwards;

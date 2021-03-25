@@ -137,18 +137,16 @@
             font-weight: bold;
             color: white;
         }
+        @include tablette{
+            width: 40px;
+        }
+        @include pc{
+            width: 50px;
+        }
     }
     &:hover .right-hide{
         -webkit-animation: checkbox-animation 500ms ease-in-out forwards ;
                 animation: checkbox-animation 500ms ease-in-out forwards ; /* durée animation: 500 ms, ralenti en debut et fin d'animation, reste sur le 100% à la fin */
-        @include tablette{
-            -webkit-animation: checkbox-animation-tablette 500ms ease-in-out forwards ;
-                    animation: checkbox-animation-tablette 500ms ease-in-out forwards ;
-        }
-        @include pc{
-            -webkit-animation: checkbox-animation-pc 500ms ease-in-out forwards ;
-                    animation: checkbox-animation-pc 500ms ease-in-out forwards ;
-        }
     }
     &:hover i{
         -webkit-animation: rotate-i 500ms ease-in-out forwards;
