@@ -177,6 +177,9 @@
   display: inline-block;
   width: 80px;
   height: 80px;
+  margin: 0 auto;
+  margin-top: 50vh;
+  transform: translateY(-50%);
 }
 .rond-chargement:after {
   content: " ";
@@ -195,10 +198,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-}
-
-html, body {
-  height: 100%;
 }
 
 body {
