@@ -48,29 +48,55 @@
     }
 }
 
+
+
 @-webkit-keyframes titre-plat-animation{
     from{
-        width: 80%;
+        width: 100%;
         
         
     }
     to{
         
         width : 70%;
-        
     }
 }
 
+
+
 @keyframes titre-plat-animation{
     from{
-        width: 80%;
+        width: 100%;
         
         
     }
     to{
         
         width : 70%;
+    }
+}
+
+@-webkit-keyframes titre-plat-animation-ls{
+    from{
+        width: 180px;
         
+        
+    }
+    to{
+        
+        width :150px;
+    }
+}
+
+@keyframes titre-plat-animation-ls{
+    from{
+        width: 180px;
+        
+        
+    }
+    to{
+        
+        width :150px;
     }
 }
 

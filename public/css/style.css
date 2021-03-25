@@ -45,7 +45,7 @@
 }
 @-webkit-keyframes titre-plat-animation {
   from {
-    width: 80%;
+    width: 100%;
   }
   to {
     width: 70%;
@@ -53,10 +53,26 @@
 }
 @keyframes titre-plat-animation {
   from {
-    width: 80%;
+    width: 100%;
   }
   to {
     width: 70%;
+  }
+}
+@-webkit-keyframes titre-plat-animation-ls {
+  from {
+    width: 180px;
+  }
+  to {
+    width: 150px;
+  }
+}
+@keyframes titre-plat-animation-ls {
+  from {
+    width: 180px;
+  }
+  to {
+    width: 150px;
   }
 }
 @-webkit-keyframes rotate-i {
@@ -625,8 +641,8 @@ header p {
   /* MENU */
 }
 .carte .carte__img {
-  width: 100%;
   height: 300px;
+  width: 100%;
 }
 .carte .carte__img img {
   -o-object-fit: cover;
@@ -638,7 +654,7 @@ header p {
   position: relative;
   top: -40px;
   background-color: #f6f6f6;
-  padding: 20px;
+  padding: 15px;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
   display: flex;
@@ -664,7 +680,6 @@ header p {
   margin-top: 20px;
 }
 .carte .carte__menu--choice-plat {
-  width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
@@ -698,8 +713,6 @@ header p {
 .encadre-choix {
   background-color: white;
   display: flex;
-  width: 100%;
-  max-width: 100%;
   margin-top: 15px;
   align-items: center;
   justify-content: flex-end;
@@ -742,7 +755,7 @@ header p {
 .encadre-choix .left {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   margin-left: 10px;
   margin-right: auto;
   white-space: nowrap;
@@ -756,6 +769,24 @@ header p {
 }
 .encadre-choix .left p {
   font-size: 14px;
+}
+@media screen and (max-width: 340px) {
+  .encadre-choix .left p {
+    font-size: 12px;
+  }
+}
+.encadre-choix .left h3 {
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 340px) {
+  .encadre-choix .left h3 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .encadre-choix .left {
+    width: 200px;
+  }
 }
 .encadre-choix .right {
   display: flex;
@@ -800,8 +831,14 @@ header p {
   animation: prix-animation 500ms ease-in-out forwards;
 }
 .encadre-choix:hover .left {
-  -webkit-animation: titre-plat-animation forwards;
-  animation: titre-plat-animation forwards;
+  -webkit-animation: titre-plat-animation 500ms ease-in-out forwards;
+  animation: titre-plat-animation 500ms ease-in-out forwards;
+}
+@media screen and (max-width: 340px) {
+  .encadre-choix:hover .left {
+    -webkit-animation: titre-plat-animation-ls 500ms ease-in-out forwards;
+    animation: titre-plat-animation-ls 500ms ease-in-out forwards;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

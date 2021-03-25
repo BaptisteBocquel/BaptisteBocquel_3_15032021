@@ -5,8 +5,8 @@
     /* IMAGE MENU */
 
     .carte__img{
-        width: 100%;
         height: $img-menu-height;
+        width: 100%;
         @include img-menu;
     }
 
@@ -16,7 +16,7 @@
         position:relative;
         top: -40px;
         background-color : $bg-explorer;
-        padding: 20px;
+        padding: 15px;
         @include border-radius-top(40px);
         display: flex;
         flex-direction: column;
@@ -37,7 +37,6 @@
         &--choice{
             margin-top: 20px;
             &-plat{
-            width: 100%;
             display:flex;
             flex-direction: column;
             margin-bottom: 30px;
@@ -69,8 +68,6 @@
 .encadre-choix{
     background-color: white;
     display: flex;
-    width: 100%;
-    max-width: 100%;
     margin-top: 15px;
     align-items: center;
     justify-content: flex-end;
@@ -99,20 +96,35 @@
     .left{
         display:flex;
         flex-direction: column;
-        width : 80%;
+        width: 100%;
         margin-left: 10px;
         margin-right: auto;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         p,h3{
-            
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            @include littlesmart{
+                
+            }
         }
         p{
             font-size: 14px;
+            @include littlesmart{
+                font-size: 12px;
+            }
+        }
+        h3{
+            margin-bottom: 5px;
+            @include littlesmart{
+                font-size: 12px;
+
+            }
+        }
+        @include littlesmart{
+            width: 200px;
         }
         
     }
@@ -159,9 +171,13 @@
     }
 
     &:hover .left{
-        -webkit-animation: titre-plat-animation  forwards ;
-                animation: titre-plat-animation  forwards ;
-    }
+        -webkit-animation: titre-plat-animation 500ms ease-in-out forwards ;
+                animation: titre-plat-animation 500ms ease-in-out forwards ;
+                @include littlesmart{
+                    -webkit-animation: titre-plat-animation-ls 500ms ease-in-out forwards;
+                            animation: titre-plat-animation-ls 500ms ease-in-out forwards;
+                }
+            }
 
     
 }
