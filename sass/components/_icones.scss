@@ -1,21 +1,9 @@
 .hearth{   
     color:#333;
     font-size : 30px;
-    &:active{
+    &:hover{
         -webkit-animation: remplissage-coeur 600ms ease-in-out forwards;
                 animation: remplissage-coeur 600ms ease-in-out forwards;
-    }
-    @include tablette{
-        &:hover{
-            -webkit-animation: remplissage-coeur 600ms ease-in-out forwards;
-                    animation: remplissage-coeur 600ms ease-in-out forwards;
-        }
-    }
-    @include pc{
-        &:hover{
-            -webkit-animation: remplissage-coeur 600ms ease-in-out forwards;
-                    animation: remplissage-coeur 600ms ease-in-out forwards;
-        }
     }
 }
 .map{
