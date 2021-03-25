@@ -264,18 +264,19 @@ footer a:hover {
 }
 .search input {
   background-color: #eaeaea;
-  margin-left: 10px;
   color: #353535;
+  text-align: center;
+  font-size: 15px;
 }
 .search #search_label {
   font-family: "roboto", sans-serif;
   font-size: 17px;
-  font-size: bold;
-  width: 150px;
+  font-weight: bold;
   overflow: hidden;
 }
 .search i {
-  margin-left: 30px;
+  position: relative;
+  left: 30px;
 }
 
 .bouton {
@@ -561,6 +562,29 @@ header p {
     justify-content: center;
   }
 }
+.dispo-rest .lien {
+  position: relative;
+  display: inline-block;
+}
+.dispo-rest .lien .hearth {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .dispo-rest .lien {
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .dispo-rest .lien {
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
 
 .rest {
   background-color: #f6f6f6;
@@ -571,23 +595,6 @@ header p {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.rest a {
-  display: inline-block;
-}
-@media screen and (min-width: 600px) and (max-width: 1023px) {
-  .rest a {
-    width: 45%;
-    margin: 0 auto;
-    margin-top: 40px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .rest a {
-    width: 45%;
-    margin: 0 auto;
-    margin-top: 40px;
-  }
 }
 .rest h2 {
   align-self: flex-start;
