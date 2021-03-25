@@ -69,19 +69,22 @@
 .encadre-choix{
     background-color: white;
     display: flex;
+    width: 100%;
+    max-width: 100%;
     margin-top: 15px;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 10px;
+    justify-content: flex-end;
     height: 65px;
     opacity: 0;
-    
+    overflow: hidden;
     @include box_shadow-size($box-shadow:0.1px, $radius:8px);
     @include border-radius-size(15px);
-    animation: apparition-menu $anim-dur ease-in-out forwards;
+    -webkit-animation: apparition-menu $anim-dur ease-in-out forwards;
+            animation: apparition-menu $anim-dur ease-in-out forwards;
     @for $i from 1 through $num-menu{
         &--#{$i}{
-            animation-delay: $anim-delay * $i;
+            -webkit-animation-delay: $anim-delay * $i;
+                    animation-delay: $anim-delay * $i;
         }
     }
     @include tablette{
@@ -93,53 +96,74 @@
     @include pc{
         width: 600px;
     }
+    .left{
+        display:flex;
+        flex-direction: column;
+        width : 80%;
+        margin-left: 10px;
+        margin-right: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        p,h3{
+            
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        p{
+            font-size: 14px;
+        }
+        
+    }
+
+    .right{
+        display: flex;
+        transform: translateX(10px);
+
+    }
     
     .right-hide{
-        background-color:$color-tertiary;
-        width: 0;
-        height: 100%;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        margin-left: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
+        background-color:$color-tertiary;
+        width: 30px;
+        height: 100%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        transform: translateX(60px);
         i{
             font-weight: bold;
             color: white;
         }
     }
     &:hover .right-hide{
-        animation: checkbox-animation 500ms ease-in-out forwards ; /* durée animation: 500 ms, ralenti en debut et fin d'animation, reste sur le 100% à la fin */
+        -webkit-animation: checkbox-animation 500ms ease-in-out forwards ;
+                animation: checkbox-animation 500ms ease-in-out forwards ; /* durée animation: 500 ms, ralenti en debut et fin d'animation, reste sur le 100% à la fin */
         @include tablette{
-            animation: checkbox-animation-tablette 500ms ease-in-out forwards ;
+            -webkit-animation: checkbox-animation-tablette 500ms ease-in-out forwards ;
+                    animation: checkbox-animation-tablette 500ms ease-in-out forwards ;
         }
         @include pc{
-            animation: checkbox-animation-pc 500ms ease-in-out forwards ;
+            -webkit-animation: checkbox-animation-pc 500ms ease-in-out forwards ;
+                    animation: checkbox-animation-pc 500ms ease-in-out forwards ;
         }
     }
     &:hover i{
-        animation: rotate-i 500ms ease-in-out forwards;
+        -webkit-animation: rotate-i 500ms ease-in-out forwards;
+                animation: rotate-i 500ms ease-in-out forwards;
     }
-    .right{
-        width: 8%;
-        margin-left:10px;
-        
+
+    &:hover .right{
+        -webkit-animation: prix-animation 500ms ease-in-out forwards ;
+                animation: prix-animation 500ms ease-in-out forwards ;
     }
-    .left{
-        width: 82%;
-        white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        p, h3{
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        p{
-            font-size : 16px;
-        }
-        
+
+    &:hover .left{
+        -webkit-animation: titre-plat-animation  forwards ;
+                animation: titre-plat-animation  forwards ;
     }
+
+    
 }

@@ -1,9 +1,86 @@
-@keyframes reduction{
+@-webkit-keyframes checkbox-animation{
     from{
-        margin-right:-30px;
+        transform: translateX(60px);
+        
+        
     }
     to{
-        margin-right: 0px;
+        
+        transform: translateX(0px);
+    }
+}
+
+@keyframes checkbox-animation{
+    from{
+        transform: translateX(60px);
+        
+        
+    }
+    to{
+        
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes prix-animation{
+    from{
+        transform: translateX(10px);
+        
+        
+    }
+    to{
+        
+        transform: translateX(-5px);
+        
+    }
+}
+
+@keyframes prix-animation{
+    from{
+        transform: translateX(10px);
+        
+        
+    }
+    to{
+        
+        transform: translateX(-5px);
+        
+    }
+}
+
+@-webkit-keyframes titre-plat-animation{
+    from{
+        width: 80%;
+        
+        
+    }
+    to{
+        
+        width : 70%;
+        
+    }
+}
+
+@keyframes titre-plat-animation{
+    from{
+        width: 80%;
+        
+        
+    }
+    to{
+        
+        width : 70%;
+        
+    }
+}
+
+@-webkit-keyframes rotate-i{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
     }
 }
 
@@ -17,6 +94,16 @@
     }
 }
 
+@-webkit-keyframes apparition-accueil{
+    from{
+        transform: translateX(-5000px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
 @keyframes apparition-accueil{
     from{
         transform: translateX(-5000px);
@@ -24,6 +111,15 @@
 
     to{
         transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes animation-chargement{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
     }
 }
 
@@ -36,6 +132,18 @@
     }
 }
 
+@-webkit-keyframes apparition-menu{
+    0%{
+        opacity: 0;
+        
+    }
+
+    100%{
+        opacity: 1;
+
+    }
+}
+
 @keyframes apparition-menu{
     0%{
         opacity: 0;
@@ -45,6 +153,25 @@
     100%{
         opacity: 1;
 
+    }
+}
+
+@-webkit-keyframes remplissage-coeur{
+    0%{
+        color : #333;
+    }
+
+    50%{
+        font-weight:bold;
+        color: $color-primary;
+        transform: scale(1.5);
+    }
+    100%{
+        font-weight: bold;
+        color:transparent;
+        background:linear-gradient(60deg, $color-primary,$color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 

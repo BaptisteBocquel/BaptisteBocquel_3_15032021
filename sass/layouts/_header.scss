@@ -9,7 +9,9 @@ header{
     box-shadow: 1px 1px 10px #353535;
     img{
         
-        object-fit: contain;
+        -o-object-fit: contain;
+        
+           object-fit: contain;
         width: $width-logo;
         height: $height-logo;
         margin: 0 auto;
