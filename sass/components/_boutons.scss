@@ -1,4 +1,9 @@
-button{
+.bouton{
+    display:flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     height: $height-button;
     background:linear-gradient(170deg,$color-secondary, $color-primary);
     margin-top: 30px;

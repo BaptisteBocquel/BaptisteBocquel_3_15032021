@@ -53,14 +53,8 @@
                 }
             }
         }
-        button{
-            width: 50%;
-            align-self: center;
-            margin-top:20px;
-            @include pc{
-                width: 250px;
-            }
-        }
+        
+        
     }
     
 }

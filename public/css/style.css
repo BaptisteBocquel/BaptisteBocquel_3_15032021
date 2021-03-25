@@ -278,7 +278,12 @@ footer a:hover {
   margin-left: 30px;
 }
 
-button {
+.bouton {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   height: 50px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   margin-top: 30px;
@@ -291,13 +296,13 @@ button {
   position: relative;
   z-index: 1;
 }
-button a {
+.bouton a {
   color: white;
 }
-button:hover::after {
+.bouton:hover::after {
   opacity: 1;
 }
-button::after {
+.bouton::after {
   content: " ";
   position: absolute;
   top: 0;
@@ -708,16 +713,6 @@ header p {
 @media screen and (min-width: 1024px) {
   .carte .carte__menu--choice p:first-child {
     text-align: center;
-  }
-}
-.carte .carte__menu button {
-  width: 50%;
-  align-self: center;
-  margin-top: 20px;
-}
-@media screen and (min-width: 1024px) {
-  .carte .carte__menu button {
-    width: 250px;
   }
 }
 
