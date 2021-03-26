@@ -271,7 +271,7 @@ footer a:hover {
 .search #search_label {
   font-family: "roboto", sans-serif;
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 600;
   overflow: hidden;
 }
 .search i {
@@ -758,7 +758,7 @@ header p {
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .encadre-choix {
-    width: 80%;
+    width: 500px;
     margin: 0 auto;
     margin-top: 15px;
   }
@@ -774,9 +774,7 @@ header p {
   width: 100%;
   margin-left: 10px;
   margin-right: auto;
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .encadre-choix .left p, .encadre-choix .left h3 {
   white-space: nowrap;
