@@ -216,12 +216,9 @@
         font-weight: bold;
         color:transparent;
         background:linear-gradient(60deg, $color-primary,$color-secondary);
-        background-clip: text;
-        text-fill-color: rgba (0,0,0,0.0001);
         -webkit-background-clip: text;
         -webkit-text-fill-color: rgba (0,0,0,0.0001);
         -moz-background-clip: text;
-        -webkit-box-decoration-break: clone;
         
     }
 }

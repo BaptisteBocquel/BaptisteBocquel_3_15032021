@@ -169,12 +169,9 @@
     font-weight: bold;
     color: transparent;
     background: linear-gradient(60deg, #9356DC, #FF79DA);
-    background-clip: text;
-    text-fill-color: rgba 0, 0, 0, 0.0001;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba 0, 0, 0, 0.0001;
     -moz-background-clip: text;
-    -webkit-box-decoration-break: clone;
   }
 }
 .accueil {
@@ -207,8 +204,8 @@
   border-radius: 50%;
   border: 6px solid #fff;
   border-color: #9356DC transparent #FF79DA transparent;
-  -webkit-animation: animation-chargement 1.2s linear 6;
-  animation: animation-chargement 1.2s linear 6;
+  -webkit-animation: animation-chargement 1.2s linear 5;
+  animation: animation-chargement 1.2s linear 5;
 }
 
 * {
