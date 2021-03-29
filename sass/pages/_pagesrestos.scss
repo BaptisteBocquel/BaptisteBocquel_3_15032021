@@ -108,9 +108,6 @@
             @include littlesmart{
                 font-size: 13px;
             }
-            @include tablette{
-                font-size: 18px;
-            }
 
         }
         h3{
@@ -119,9 +116,6 @@
             @include littlesmart{
                 font-size: 13px;
 
-            }
-            @include tablette{
-                font-size: 22px;
             }
             
         }
