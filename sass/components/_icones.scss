@@ -1,7 +1,7 @@
 .hearth{ 
     color:#333;
     font-size : 30px;
-    
+    display: inline;
     &:active, &:hover{
         -webkit-animation: remplissage-coeur 600ms ease-in-out forwards;
                 animation: remplissage-coeur 600ms ease-in-out forwards;

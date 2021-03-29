@@ -213,6 +213,7 @@
         transform: scale(1.5);
     }
     100%{
+        display: inline;
         font-weight: bold;
         color:transparent;
         background:linear-gradient(60deg, $color-primary,$color-secondary);

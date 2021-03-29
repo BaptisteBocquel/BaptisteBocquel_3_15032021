@@ -166,6 +166,7 @@
     transform: scale(1.5);
   }
   100% {
+    display: inline;
     font-weight: bold;
     color: transparent;
     background: linear-gradient(60deg, #9356DC, #FF79DA);
@@ -326,6 +327,7 @@ footer a:hover {
 .hearth {
   color: #333;
   font-size: 30px;
+  display: inline;
 }
 .hearth:active, .hearth:hover {
   -webkit-animation: remplissage-coeur 600ms ease-in-out forwards;
