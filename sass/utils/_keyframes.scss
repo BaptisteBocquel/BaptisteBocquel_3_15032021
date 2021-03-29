@@ -221,6 +221,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -moz-background-clip: text;
+        -webkit-box-decoration-break: clone;
         
     }
 }
