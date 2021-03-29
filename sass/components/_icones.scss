@@ -2,7 +2,7 @@
     color:#333;
     font-size : 30px;
     
-    &:hover{
+    &:active, &:hover{
         -webkit-animation: remplissage-coeur 600ms ease-in-out forwards;
                 animation: remplissage-coeur 600ms ease-in-out forwards;
     }

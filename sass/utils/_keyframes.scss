@@ -10,6 +10,7 @@
     }
 }
 
+
 @keyframes checkbox-animation{
     from{
         transform: translateX(60px);
@@ -30,10 +31,11 @@
     }
     to{
         
-        transform: translateX(-5px);
+        transform: translateX(-20px);
         
     }
 }
+
 
 
 
@@ -45,7 +47,7 @@
     }
     to{
         
-        transform: translateX(-5px);
+        transform: translateX(-20px);
         
     }
 }
@@ -64,7 +66,6 @@
 }
 
 
-
 @keyframes titre-plat-animation{
     from{
         width: 100%;
@@ -78,25 +79,25 @@
 
 @-webkit-keyframes titre-plat-animation-ls{
     from{
-        width: 180px;
+        width: 190px;
         
         
     }
     to{
         
-        width :150px;
+        width :160px;
     }
 }
 
 @keyframes titre-plat-animation-ls{
     from{
-        width: 180px;
+        width: 190px;
         
         
     }
     to{
         
-        width :150px;
+        width :160px;
     }
 }
 
@@ -215,7 +216,11 @@
         font-weight: bold;
         color:transparent;
         background:linear-gradient(60deg, $color-primary,$color-secondary);
+        background-clip: text;
+        text-fill-color: transparent;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        
     }
 }

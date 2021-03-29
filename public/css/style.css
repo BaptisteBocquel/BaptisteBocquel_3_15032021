@@ -32,7 +32,7 @@
     transform: translateX(10px);
   }
   to {
-    transform: translateX(-5px);
+    transform: translateX(-20px);
   }
 }
 @keyframes prix-animation {
@@ -40,7 +40,7 @@
     transform: translateX(10px);
   }
   to {
-    transform: translateX(-5px);
+    transform: translateX(-20px);
   }
 }
 @-webkit-keyframes titre-plat-animation {
@@ -61,18 +61,18 @@
 }
 @-webkit-keyframes titre-plat-animation-ls {
   from {
-    width: 180px;
+    width: 190px;
   }
   to {
-    width: 150px;
+    width: 160px;
   }
 }
 @keyframes titre-plat-animation-ls {
   from {
-    width: 180px;
+    width: 190px;
   }
   to {
-    width: 150px;
+    width: 160px;
   }
 }
 @-webkit-keyframes rotate-i {
@@ -169,8 +169,11 @@
     font-weight: bold;
     color: transparent;
     background: linear-gradient(60deg, #9356DC, #FF79DA);
+    background-clip: text;
+    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
   }
 }
 .accueil {
@@ -323,7 +326,7 @@ footer a:hover {
   color: #333;
   font-size: 30px;
 }
-.hearth:hover {
+.hearth:active, .hearth:hover {
   -webkit-animation: remplissage-coeur 600ms ease-in-out forwards;
   animation: remplissage-coeur 600ms ease-in-out forwards;
 }
@@ -803,7 +806,7 @@ header p {
 }
 @media screen and (max-width: 340px) {
   .encadre-choix .left h3 {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 340px) {
@@ -840,25 +843,25 @@ header p {
     width: 50px;
   }
 }
-.encadre-choix:hover .right-hide {
+.encadre-choix:active .right-hide, .encadre-choix:hover .right-hide {
   -webkit-animation: checkbox-animation 500ms ease-in-out forwards;
   animation: checkbox-animation 500ms ease-in-out forwards;
   /* durée animation: 500 ms, ralenti en debut et fin d'animation, reste sur le 100% à la fin */
 }
-.encadre-choix:hover i {
+.encadre-choix:active i, .encadre-choix:hover i {
   -webkit-animation: rotate-i 500ms ease-in-out forwards;
   animation: rotate-i 500ms ease-in-out forwards;
 }
-.encadre-choix:hover .right {
+.encadre-choix:active .right, .encadre-choix:hover .right {
   -webkit-animation: prix-animation 500ms ease-in-out forwards;
   animation: prix-animation 500ms ease-in-out forwards;
 }
-.encadre-choix:hover .left {
+.encadre-choix:active .left, .encadre-choix:hover .left {
   -webkit-animation: titre-plat-animation 500ms ease-in-out forwards;
   animation: titre-plat-animation 500ms ease-in-out forwards;
 }
 @media screen and (max-width: 340px) {
-  .encadre-choix:hover .left {
+  .encadre-choix:active .left, .encadre-choix:hover .left {
     -webkit-animation: titre-plat-animation-ls 500ms ease-in-out forwards;
     animation: titre-plat-animation-ls 500ms ease-in-out forwards;
   }

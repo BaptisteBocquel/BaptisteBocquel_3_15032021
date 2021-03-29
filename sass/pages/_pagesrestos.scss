@@ -114,10 +114,8 @@
             font-size: 18px;
             margin-bottom: 5px;
             @include littlesmart{
-                font-size: 13px;
-
-            }
-            
+                font-size: 12px;
+            } 
         }
         @include littlesmart{
             width: 200px;
@@ -151,21 +149,21 @@
             width: 50px;
         }
     }
-    &:hover .right-hide{
+    &:active .right-hide, &:hover .right-hide{
         -webkit-animation: checkbox-animation 500ms ease-in-out forwards ;
                 animation: checkbox-animation 500ms ease-in-out forwards ; /* durée animation: 500 ms, ralenti en debut et fin d'animation, reste sur le 100% à la fin */
     }
-    &:hover i{
+    &:active i, &:hover i{
         -webkit-animation: rotate-i 500ms ease-in-out forwards;
                 animation: rotate-i 500ms ease-in-out forwards;
     }
 
-   &:hover .right{
+   &:active .right, &:hover .right{
         -webkit-animation: prix-animation 500ms ease-in-out forwards ;
                 animation: prix-animation 500ms ease-in-out forwards ;
     }
 
-   &:hover .left{
+   &:active .left, &:hover .left{
         -webkit-animation: titre-plat-animation 500ms ease-in-out forwards ;
                 animation: titre-plat-animation 500ms ease-in-out forwards ;
                 @include littlesmart{
