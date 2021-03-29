@@ -2,7 +2,7 @@
     
     transform: translateX(-5000px);
     -webkit-animation: apparition-accueil 4000ms 1500ms ease-out forwards;
-            animation: apparition-accueil 4000ms 1500ms ease-out forwards;
+    animation: apparition-accueil 4000ms 1500ms ease-out forwards;
     position: absolute;
     z-index: 1;
     justify-self: start;
@@ -29,8 +29,8 @@
         border-radius: 50%;
         border: 6px solid #fff;
         border-color: $color-primary transparent $color-secondary transparent;
-        -webkit-animation: animation-chargement 1.2s linear infinite;
-                animation: animation-chargement 1.2s linear infinite;
+        -webkit-animation: animation-chargement 1.2s linear 6;
+                animation: animation-chargement 1.2s linear 6;
       }
 }
 

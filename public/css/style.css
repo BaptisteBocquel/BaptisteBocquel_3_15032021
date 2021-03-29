@@ -203,8 +203,8 @@
   border-radius: 50%;
   border: 6px solid #fff;
   border-color: #9356DC transparent #FF79DA transparent;
-  -webkit-animation: animation-chargement 1.2s linear infinite;
-  animation: animation-chargement 1.2s linear infinite;
+  -webkit-animation: animation-chargement 1.2s linear 6;
+  animation: animation-chargement 1.2s linear 6;
 }
 
 * {
@@ -565,6 +565,7 @@ header p {
 }
 .dispo-rest .lien {
   position: relative;
+  width: 100%;
   display: inline-block;
 }
 .dispo-rest .lien .hearth {
@@ -776,6 +777,7 @@ header p {
   margin-left: 10px;
   margin-right: auto;
   overflow: hidden;
+  background: white;
 }
 .encadre-choix .left p, .encadre-choix .left h3 {
   white-space: nowrap;
