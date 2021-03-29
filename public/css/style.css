@@ -547,6 +547,10 @@ header p {
   text-align: center;
 }
 
+.accueil {
+  width: 100%;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .dispo-rest {
     display: flex;
@@ -665,6 +669,7 @@ header p {
 .carte {
   position: absolute;
   background-color: #f6f6f6;
+  width: 100%;
   /* IMAGE MENU */
   /* MENU */
 }
@@ -789,15 +794,26 @@ header p {
 }
 @media screen and (max-width: 340px) {
   .encadre-choix .left p {
-    font-size: 12px;
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .encadre-choix .left p {
+    font-size: 18px;
   }
 }
 .encadre-choix .left h3 {
+  font-size: 18px;
   margin-bottom: 5px;
 }
 @media screen and (max-width: 340px) {
   .encadre-choix .left h3 {
-    font-size: 12px;
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .encadre-choix .left h3 {
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 340px) {

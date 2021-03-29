@@ -1,6 +1,7 @@
 .carte{
     position :absolute;
     background-color: $bg-explorer;
+    width: 100%;
 
     /* IMAGE MENU */
 
@@ -105,15 +106,24 @@
         p{
             font-size: 14px;
             @include littlesmart{
-                font-size: 12px;
+                font-size: 13px;
             }
+            @include tablette{
+                font-size: 18px;
+            }
+
         }
         h3{
+            font-size: 18px;
             margin-bottom: 5px;
             @include littlesmart{
-                font-size: 12px;
+                font-size: 13px;
 
             }
+            @include tablette{
+                font-size: 22px;
+            }
+            
         }
         @include littlesmart{
             width: 200px;
