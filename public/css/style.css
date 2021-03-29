@@ -171,9 +171,9 @@
     background: linear-gradient(60deg, #9356DC, #FF79DA);
     background: -webkit-linear-gradient(60deg, #9356DC, #FF79DA);
     background-clip: text;
-    text-fill-color: transparent;
+    text-fill-color: rgba(0, 0, 0, 0.000001);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.000001);
     -moz-background-clip: text;
     -webkit-box-decoration-break: clone;
   }
@@ -583,6 +583,9 @@ header p {
   right: 20px;
   bottom: 20px;
 }
+.dispo-rest .lien .right {
+  display: inline;
+}
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .dispo-rest .lien {
     width: 45%;
@@ -714,6 +717,9 @@ header p {
     margin-right: 20px;
     font-size: 25px;
   }
+}
+.carte .carte__menu--title .right {
+  display: inline;
 }
 .carte .carte__menu--choice {
   margin-top: 20px;

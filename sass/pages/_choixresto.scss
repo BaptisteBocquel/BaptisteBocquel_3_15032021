@@ -19,12 +19,16 @@
     .lien{
         position:relative;
         width: 100%;
+        display: inline-block;
         .hearth{
             position: absolute;
             right: 20px;
             bottom: 20px;
         }
-        display: inline-block;
+        .right{
+            display: inline;
+        }   
+        
         @include tablette{
             width: 45%;
             margin: 0 auto;
